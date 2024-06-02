@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background */
+body{
+    background-color: black;
+}
+
+/* navbar keseluruhan */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #AC7676;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+/* option navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 10rem;
+}
+
+/* text navbar */
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 4px 0;
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* logo di navbar */
+nav div img{
+    width: 288px;
+    height: 56px;
+    display: flex;
+    padding-top: 5px;
+}
+
+/* navbar di-hover */
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    color: red;
+}
+
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+    color:white;
+}
+
+/* pembatasan (Responsif)  */
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    }
+
+
+    /* buat burger jsnya */
+    nav ul.hidden{
+        display: none;
+    }
+
+    /* burger kl kecil */
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* title promotion */
+.promotion h1{
+    color:#DF2C05 ;
+    margin-top: 120px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 105px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* 20% OFF */
+.subtitle{
+    color:#DF2C05 ;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 105px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* gambar pertama */
+.gambar1{
+
+width: 210px;
+height: 200px;
+margin-left: 50px;
+border-radius: 40px;
+}
+/* gambar kedua */
+.gambar2{
+
+width: 210px;
+height: 200px;
+margin-left: 370px;
+margin-top: -200px;
+border-radius: 40px;
+}
+/* gambar ketiga*/
+.gambar3{
+width: 210px;
+height: 200px;
+margin-left: 670px;
+margin-top: -200px;
+border-radius: 40px;
+}
+/* gambar keempat*/
+.gambar4{
+width: 210px;
+height: 200px;
+margin-left: 970px;
+margin-top: -200px;
+border-radius: 40px;
+}
+/* gambar kelima*/
+.gambar5{
+width: 210px;
+height: 200px;
+margin-top: -200px;
+margin-left: 1270px;
+margin-right: 200px;
+border-radius: 25px;
+}
+/* desc 1*/
+.text1{
+width: 180px;
+height: 57.46px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+color: rgb(206, 200, 200);
+
+}
+/* desc 2*/
+.text2{
+width: 180px;
+height: 57px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+color: rgb(206, 200, 200);
+
+}
+/* desc 3*/
+.text3{
+width: 270px;
+height: 57.46px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+color: rgb(206, 200, 200);
+
+}
+/* desc 4*/
+.text4{
+width: 200px;
+height: 57.46px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+color: rgb(206, 200, 200);
+
+}
+/* desc 5*/
+.text5{
+width: 200px;
+height: 57.46px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+color: rgb(206, 200, 200);
+
+}
+
+@media (max-width: 768px){
+    .gambar1{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 110px;
+        font-size: medium;
+        }
+    
+   
+    .gambar2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 400px;
+        font-size: medium;
+        }
+    
+    .gambar3{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 110px;
+        margin-top: 100px;
+        font-size: medium; 
+        }
+    .gambar4{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 400px;
+        
+        font-size: medium; 
+    }
+    .gambar5{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 110px;
+        margin-top: 100px;
+        font-size: medium; 
+    }
+}

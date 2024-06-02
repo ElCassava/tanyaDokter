@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background */
+body{
+    background-color: black;
+}
+
+/* About us top text */
+.topText {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 120px;
+    font-size: 40px;
+}
+
+.topTextAbout {
+    padding: 5px;
+    color: white;
+}
+
+.topTextUs {
+    padding: 5px;
+    color: red;
+}
+
+/* gambar satu */
+.pic1 {
+    color: #DC5F00;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pic1text {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.pic1 img {
+    
+    margin-left: 35px;
+    margin-right: 10px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+/* gambar dua */
+.pic2 {
+    color: #DC5F00;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.pic2text {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.pic2 img {
+    margin-bottom: 25px;
+    margin-left: 35px;
+    margin-right: 30px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .pic1 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+        font-size: medium;
+    }
+
+    .pic1text {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .pic1 img {
+        margin-top: 55px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+
+    .pic2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+        font-size: medium;
+    }
+
+    .pic2text {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .pic2 img {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 75px;
+        width: 400px;
+    }
+}
+
+/* navbar keseluruhan */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #AC7676;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+/* option navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 10rem;
+}
+
+/* text navbar */
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 4px 0;
+    font-size: 24px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* logo di navbar */
+nav div img{
+    width: 288px;
+    height: 56px;
+    display: flex;
+    padding-top: 5px;
+}
+
+/* navbar di-hover */
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    color: red;
+}
+
+/* burger icon */
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+    color:white;
+}
+
+/* buy now button */
+.buynow-button{
+    background-color: red;
+    border: none; 
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 400%);
+}
+/* buy now button text */
+.buynow-button h1{
+    color: white;
+    padding: 10px 20px; 
+    font-size: 25px
+}
+
+/* buy now button hover */
+.buynow-button :hover{
+    background-color: white;
+    border-radius: 25px;
+    color: red;
+}
+
+/* pembatasan (Responsif)  */
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    }
+
+
+    /* buat burger jsnya */
+    nav ul.hidden{
+        display: none;
+    }
+
+    /* burger kl kecil */
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+

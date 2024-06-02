@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanyaDokter</title>
+    <link rel="stylesheet" href="contactus.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- bag navbar  -->
+    <nav>
+        <div class="logo">
+            <img src="aset/logo.png" alt="Logo">
+        </div>
+        <div id = "menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="promotion.html">Promotion</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- top text -->
+    <div class="topText">
+        <div class="topTextAbout">
+            <p>Contact</p>
+        </div>
+
+        <div class="topTextUs">
+            <p>Us</p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contactMessage">
+        <p>Untuk menghubungi tanyaDokter, mohon mengisi form di bawah ini.</p>
+    </div>
+    
+    <h1>Nama</h1>
+
+    <div class="nameRow">
+        <div class="form1">
+            <form>
+                <input id="firstName" class="nameRow" type="firstName" placeholder=" Nama Depan">
+            </form>
+        </div>
+    
+        <div class="form2">
+            <form>
+                <input id="lastName" class="nameRow" type="lastName" placeholder=" Nama Belakang">
+            </form>
+        </div>
+    </div>
+
+    <h1>Email</h1>
+
+    <div class="emailRow">
+        <div class="form3">
+            <form>
+                <input id="email" class="emailRow" type="email" placeholder=" Email">
+            </form>
+        </div>
+    </div>
+
+    <h1>No HP</h1>
+
+    <div class="phoneRow">
+        <div class="form4">
+            <form>
+                <input id="phone" class="phoneRow" type="phone" placeholder=" ### ### ####">
+            </form>
+        </div>
+    </div>
+
+    <div class="termsOfService">
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox" class="checkboxText">Anda telah membaca dan setuju pada Syarat dan Ketentuan kami.</label><br>
+    </div>
+
+    <h1>Pesan</h1>
+
+    <div class="messageRow">
+        <div class="form4">
+            <form>
+                <input id="message" class="messageRow" type="message">
+            </form>
+        </div>
+    </div>
+
+    <div class="warningMsg">
+        <p>Dengan menekan tombol Submit, anda akan dialih secara otomatis kepada seorang dokter yang sedang online.</p>
+    </div>
+    
+    <div class="button">
+        <button id="myAnchor" style="height: 45px; width: 150px;" class="buttonText">
+            Submit
+        </button>
+    </div>
+    
+    <script src="contactus.js"></script>
+</body>
+</html>
